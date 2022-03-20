@@ -28,7 +28,7 @@ function distanceTravelledInFeet(num1, num2) {
 function calculatesFarePrice(start, destination) {
   let totalDis1 = (start - destination) * 264;
   let totalDis = Math.abs(totalDis1);
-  if (totalDis >= 400 && totalDis <= 2000) {
+  if (totalDis > 400 && totalDis <= 2000) {
     let freeDis = totalDis - 400;
     return freeDis * 0.02;
   } else if (totalDis >= 2000 && totalDis <= 2500) {
